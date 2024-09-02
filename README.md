@@ -1,0 +1,1 @@
+The purpose here is to select a location and loop through all properties listed in airbnb and extract data. The python script opens a page using selenium and then loops through all url of listings and extracts data using both selenium and beautiful soup, after that it moves on to the next page. Finally it extracts everything into a dataframe.
