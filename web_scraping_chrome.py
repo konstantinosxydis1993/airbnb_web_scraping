@@ -19,7 +19,7 @@ options.add_argument("--lang=en")
 # Initialize WebDriver with the path to the manually downloaded WebDriver
 driver = webdriver.Chrome(service=Service(webdriver_path), options=options)
 
-# Airbnb search URL for Thessaloniki, Greece
+# Airbnb search URL for Athens, Greece
 airbnb_url='https://www.airbnb.com/s/Athens--Greece/homes?tab_id=home_tab&refinement_paths%5B%5D=%2Fhomes&flexible_trip_lengths%5B%5D=one_week&monthly_start_date=2024-10-01&monthly_length=3&monthly_end_date=2025-01-01&price_filter_input_type=0&channel=EXPLORE&query=Athens&place_id=ChIJ8UNwBh-9oRQR3Y1mdkU1Nic&location_bb=QhghpUG%2BUUpCF8uXQb1%2B8w%3D%3D&date_picker_type=calendar&source=structured_search_input_header&search_type=autocomplete_click'
 driver.maximize_window()
 
