@@ -79,13 +79,6 @@ while True:
                     'amenities': [i.text.split('\n')[0] for i in WebDriverWait(driver, 5).until(EC.presence_of_all_elements_located((By.CSS_SELECTOR, '[data-testid="modal-container"] [id$="-row-title"]')))]
                 }
     
-    
-                # if soup.select_one('[data-section-id="SLEEPING_ARRANGEMENT_DEFAULT"] div+div'):
-                #     sleep_areas = list(soup.select_one('[data-section-id="SLEEPING_ARRANGEMENT_DEFAULT"] div+div').stripped_strings)
-                #     d.update(dict(zip(sleep_areas[0::2], sleep_areas[1::2])))
-                # else:
-                #     d.update({'Bedroom': None})
-    
                 data.append(d)
             
             except TimeoutException:
